@@ -1,0 +1,64 @@
+.top {
+    width: 100%;
+}
+
+.top button {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+}
+
+.post-container {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.post-container ul {
+    list-style-type: none;
+}
+
+.post-container ul li {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rebeccapurple;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.post-container ul li a {
+    text-decoration: none;
+    color: #222;
+}
+
+.post-container ul li a:hover {
+    color: grey;
+}
+
+.post-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.post-container .like, .post-container .unlike {
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.post-container .like {
+    color: skyblue;
+}
+
+.post-container .unlike {
+    color: tomato;
+}
+
+.like-container {
+    margin-top: 32px;
+    width: 100%;
+}
